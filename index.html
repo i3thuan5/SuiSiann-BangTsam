@@ -4,7 +4,7 @@
 	<meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width,initial-scale=1" />
 	<title>Suí-Siann Dataset</title>
-	<link rel="icon" type="image/png" href="/favicon.png">
+	<link rel="icon" type="image/png" href="/favicon.svg">
 	<link rel="canonical" href="https://keithito.com/LJ-Speech-Dataset" />
 	<meta name="author" content="Ì-thuân Kho-ki">
 	<meta name="description" content="A public domain speech dataset consisting of 13,100 short audio clips of a single speaker reading passages from 7 non-fiction books. A transcription is provided for each clip." />
@@ -25,11 +25,29 @@
 			margin-top: 5px;
 			color: #666;
 		}
+		h3.sub.header {
+			font-size: .6em;
+			margin-top: -10px;
+			color: #aaa;
+		}
+		section {
+			margin-bottom: 6rem;
+		}
+		.main {
+			margin-bottom: 3rem;
+		}
+		.center {
+			text-align: center;
+		}
+		.ui.horizontal.bulleted.list>.item::before {
+			color: #ccc;
+		}
 	</style>
 </head>
 <body>
-	<div class="ui main text container">
-		<div class="ui two column doubling stackable grid">
+<div class="ui main text container">
+	<div class="ui two column doubling stackable grid">
+
 		<div id="side" class="three wide column">
 			<h5 class="ui header">Pán-pún</h5>
 	    	<h6>LATEST VERSION</h6>
@@ -40,13 +58,101 @@
 	    	<h5 class="header">Tshùn-tshioh</h5>
 	    	<h6>DOWNLOAD SIZE</h6>
 	    	<p class="value">1 GB</p>
-	    <p></p>
+	    </div>
+	  	
+	  	<div class="thirteen wide column">
+	    	<h1 class="ui header">Sui Siann Dataset</h1>
+			<p>Taioanoe speech dataset</p>
+
+			<section class="main">
+			<p>This is a public domain speech dataset consisting of 13,100 short audio clips of a single speaker reading passages from 7 non-fiction books. A transcription is provided for each clip. Clips vary in length from 1 to 10 seconds and have a total length of approximately 24 hours.</p>
+			<p>The texts were published between 1884 and 1964, and are in the public domain. The audio was recorded in 2016-17 by the LibriVox project and is also in the public domain.</p>
+			</section>
+
+			<section class="center">
+				<button class="ui primary button">LIA̍H (DOWNLOAD DATASET) 1GB</button>
+			</section>
+
+			<section>
+				<h2 class="ui header">Lē</h2>
+				<h3 class="ui sub header">Sample Data</h3>
+				<div class="example"></div>
+			</section>
+
+			<section>
+				<h2 class="ui header">Tóng-àn Keh-sik</h2>
+				<h3 class="ui sub header">File Format</h3>
+				<p>Metadata is provided in ???.csv.</p>
+				<p>Ta̍k ê im-tóng sī koo siann-tō.(Each audio file is a single-channel 16-bit PCM WAV with a sample rate of 22050 Hz.)</p>
+			</section>
+
+			<section>
+				<h2 class="ui header">Thóng-kè</h2>
+				<h3 class="ui sub header">Statistics</h3>
+				<table class="ui collapsing basic table">
+				  <tbody>
+				    <tr>
+				      <td data-label="Mia">Total Clips</td>
+				      <td data-label="Giah">??</td>
+				    </tr>
+				    <tr>
+				      <td data-label="Mia">Total Utterances</td>
+				      <td data-label="Giah">??</td>
+				    </tr>
+				    <tr>
+				      <td data-label="Mia">Total Duration</td>
+				      <td data-label="Giah">12 hr</td>
+				    </tr>
+				  </tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2 class="ui header">Pán-khuân</h2>
+				<h3 class="ui sub header">License</h3>
+				<p>文字部份：聲音：CC</p>
+			</section>
+
+			<section>
+				<h2 class="ui header">Bîng-siā</h2>
+				<h3 class="ui sub header">Credits</h3>
+				<p>本語料庫包括在列寶作：</p>
+				<ul>
+					<li>都市囡仔草地sông－蘇世雄</li>
+					<li>故鄉的楊桃欉－簡繡芬</li>
+				</ul>
+				<p>感謝台大語言所、瓦器錄音室鬥錄音。</p>
+				<p>感謝濟濟先進鬥走揣作者，才有thang予授權sūn-sī。</p>
+				<p>嘛敬謝文化部「語言多樣性友善環境補助」，是真大的幫贊。</p>
+			</section>
+			<div>
 	  	</div>
-	  	<div class="column">
-	    <h1 class="ui header">Sui Siann Dataset</h1>
-		<p>Taioanoe speech dataset</p>
-	  	</div>
+		
 		</div>
 	</div>
+
+	<div class="ui divider"></div>	
+	<div class="center">
+		<img class="ui centered mini image" src="./logo-greystyle.png">
+		<div class="ui vertical link list">
+			<a class="item" href="https://意傳.台灣/">Ì-thuân</a>
+		</div>
+		<div class="ui stackable grid">
+			<div class="ui row">
+			<div class="eight wide column">
+				<div class="ui link list">
+				<a class="item" href="https://www.facebook.com/i3thuan5/">Bīn-tsheh/FB</a>
+				</div>
+			</div>
+			<div class="eight wide column">
+				<div class="ui link list">
+			<a class="item" href="mailto:ithuan@意傳.台灣">Siá Phue/Email</a>
+				</div>
+			</div>
+			</div>
+		</div>	
+	</div>
+
+</div>
 </body>
 </html>
