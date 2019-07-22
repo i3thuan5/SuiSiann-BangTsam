@@ -1,0 +1,22 @@
+{
+  "name": "Sui-Siann Bang-tsam",
+  "version": "0.0.1",
+  "description": "Tâi-uân Suí-siann Bāng-tsām",
+  "scripts": {
+    "deploy": "gh-pages -d ./"
+  },
+  "keywords": [
+    "Taioanue", "臺語", "Speech", "Dataset"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sui-Siann-Dataset/Sui-Siann-BangTsam.git"
+  },
+  "author": "Ì-thuân",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Sui-Siann-Dataset/Sui-Siann-BangTsam/issues"
+  },
+  "homepage": "https://意傳.台灣/",
+  "dependencies": {}
+}
