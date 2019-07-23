@@ -15,28 +15,20 @@
 		.main.container {
 			margin-top: 4em;
 		}
+		p {
+			margin: 1.6em 0;
+			font-size: 1.3em;
+			line-height: 1.7em;
+		}
 		#side {
 			margin-top: 3em;
 		}
-		h6 {
-			margin-top: -10px;
-			margin-bottom: 0px;
-			color: #aaa;
-		}
-		#side > .value {
-			margin-top: 5px;
+		#side .ui.header span {
+			line-height: 30px;
 			color: #666;
-		}
-		h3.sub.header {
-			font-size: .6em;
-			margin-top: -10px;
-			color: #aaa;
 		}
 		section {
 			margin-bottom: 6rem;
-		}
-		.main {
-			margin-bottom: 3rem;
 		}
 		.center {
 			text-align: center;
@@ -48,30 +40,43 @@
 			margin-right: 8px;
 			vertical-align: middle;
 		}
+		.description {
+			margin-top: 1rem;
+			color: #666;
+		}
+		.description p:first-child {
+			margin-bottom: 0.3em;	
+		}
 	</style>
 </head>
 <body>
-<div class="ui main text container">
-	<div class="ui two column doubling stackable grid">
+<div class="ui main container">
+	<div class="ui two column stackable grid">
 
-		<div id="side" class="three wide column">
-			<h5 class="ui header">Pán-pún</h5>
-	    	<h6>LATEST VERSION</h6>
-	    	<p class="value">0.0.1</p>
-	    	<h5 class="header">Siū-khuân</h5>
-	    	<h6>LICENSE</h6>
-	    	<p class="value">請看授權書</p>
-	    	<h5 class="header">Tshùn-tshioh</h5>
-	    	<h6>DOWNLOAD SIZE</h6>
-	    	<p class="value">1 GB</p>
+		<div class="four wide column" id="side">
+			<h5 class="ui header">
+				PÁN-PÚN
+				<div class="sub header">LATEST VERSION</div>
+				<span>0.0.1</span>
+			</h5>
+			<h5 class="ui header">
+	    		SIŪ-KHUÂN<div class="sub header">LICENSE</div>
+	    		<span>請看授權書</span>
+	    	</h5>
+	    	<h5 class="ui header">
+	    		TSHÙN-TSHIOH<div class="sub header">DOWNLOAD SIZE</div>
+	    		<span>1 GB</span>
+	    	</h5>
 	    </div>
 	  	
-	  	<div class="thirteen wide column">
-	    	<h1 class="ui header">Sui Siann Dataset</h1>
-			<p>Taioanoe speech dataset</p>
+	  	<div class="twelve wide column">
+	    	<h1 class="ui header">
+	    		Sui Siann Dataset
+	    		<div class="sub header">Taioanoe speech dataset</div>
+	    	</h1>
 
-			<section class="main">
-			<p>Tâi-bûn pán</p>
+			<section class="ui container">
+			<h4 class="ui header">Tâi-bûn pán</h4>
 			<p>Tse sī tsi̍t pau siann-im ê gí-liāu-khòo. Tī 2018 nî iau-tshiánn Ông Siù-iông(王秀容) lāu-su lâi lo̍k-im. Lóng-tsóng ū 2,897 tè im-tóng, ta̍k-tè tn̂g-té ū OO kàu OO, liōng-kî-iok tsóng 7 tiám-tsing.</p>
 
 			<p>Gí-kíng tsīn-liōng tsiâu-tsn̂g, tuì suànn-bûn kàu ji̍t-siông tuì-uē. Suànn-bûn sī 2015 nî tshut-pán--ê. Ta̍k kù lóng ū hàn-lô tuì-tsiàu.</p>
@@ -79,9 +84,8 @@
 			<p>Im-tóng ê siū-khuân sī CC BY-SA. M̄-koh thiann-phah-kó kan-na ē-táng iōng tī gí-im ha̍p-sîng, ha̍k-su̍t--ê a̍h-sī sing-lí--ê lóng ē-īng-tit. Put-tsún siu-kái thiann-phah-kó ê hàn-jī. Nā-tsún lí m̄ sī beh iōng tī gí-im ha̍p-sîng, tshiánn liân-lo̍k tsok-tsiá.</p>
 
 			<p>Pún kè-uē ū tshíng-tio̍h Bûn-huà-pōo 2017 nî póo-tsōo.</p>
-
-
-			<p>English ver.</p>
+			
+			<h4 class="ui header">English ver.</h4>
 			<p>This is a speech dataset consisting of 2,897 short audio clips of a single speaker Ms.Ông Siù-iông reading articles. A transcription is provided for each clip. Clips vary in length from "??? to ???" seconds and have a total length of approximately 7 hours.</p>
 			
 			<p>The dataset are designed with situation balance, from articles to conversation. The articles were published in 2015. Each sentence pair contains Chinese line and Lomaji line.</p>
@@ -89,36 +93,44 @@
 			<p>The audio is CC BY-SA license. The transcription is only allowed in speech synthesis project, academically or commercially, and the remix, rewrite of Chinese lines are not allowed. If there is any other usage purposes, please contact the author.</p>
 
 			<p>This project received financial aid by Taiwan Ministry of Culture in 2017.</p>
-			</section>
 
-			<section class="center">
-				<a class="ui primary button" href="https://www.dropbox.com/s/gxu3vzspeo2x1p6/SuiSiann-0.1.tar?dl=0" target="_blank" rel="noopener">LIA̍H (DOWNLOAD DATASET) 1GB</a>
+			<div class="center">
+				<a class="ui primary icon button" href="https://www.dropbox.com/s/gxu3vzspeo2x1p6/SuiSiann-0.1.tar?dl=0" target="_blank" rel="noopener"><i class="download icon"></i>&nbsp;Sui Siann Dataset 0.0.1</a>
+			</div>
 			</section>
 
 			<section>
-				<h2 class="ui header">Lē</h2>
-				<h3 class="ui sub header">Sample Data</h3>
-				<div class="example">
+				<h2 class="ui header">
+					Lē
+					<div class="sub header">Sample Data</div>
+				</h2>
+				<div class="ui padded segment">
 					<audio src="./tuipiku_20181020.wav" type="audio/wav" controls>Oct 20, 2018  原始對比句.wav</audio>
-					多元文化欲受人肯定， 語言佇公領域的呈現是真重要的開始。
-					To-guân bûn-huà beh siū lâng khíng-tīng, gí-giân tī kong líng-hi̍k ê thîng-hiān sī tsin tiōng-iàu ê khai-sí.
+					<div class="description">
+					<p>To-guân bûn-huà beh siū lâng khíng-tīng, gí-giân tī kong líng-hi̍k ê thîng-hiān sī tsin tiōng-iàu ê khai-sí.</p>
+					<p>多元文化欲受人肯定， 語言佇公領域的呈現是真重要的開始。</p>
+					</div>
 				</div>
 			</section>
 
 			<section>
-				<h2 class="ui header">Tóng-àn Keh-sik</h2>
-				<h3 class="ui sub header">File Format</h3>
+				<h2 class="ui header">
+					Tóng-àn Keh-sik
+					<div class="sub header">File Format</div>
+				</h2>
 				<p>Metadata is provided in ???.csv.</p>
 				<p>台大錄音室錄音機：Korg MR-1000 / 1bit-5.8MHz DSD portable recorder
 Mai-khu: The Shure SM10A Headworn Vocal Microphones
-
 The Shure SM10A is a low-impedance, unidirectional dynamic microphone designed for close-talk head-worn applications</p>
-				<p>Ta̍k ê im-tóng sī koo siann-tō.(Each audio file is a single-channel 16-bit PCM WAV with a sample rate of 44100 Hz.)</p>
+				<p>Ta̍k ê im-tóng sī koo siann-tō.</p>
+				<p>Each audio file is a single-channel 16-bit PCM WAV with a sample rate of 44100 Hz.</p>
 			</section>
 
 			<section>
-				<h2 class="ui header">Thóng-kè</h2>
-				<h3 class="ui sub header">Statistics</h3>
+				<h2 class="ui header">
+					Thóng-kè
+					<div class="sub header">Statistics</div>
+				</h2>
 				<table class="ui collapsing basic table">
 				  <tbody>
 				    <tr>
@@ -138,14 +150,18 @@ The Shure SM10A is a low-impedance, unidirectional dynamic microphone designed f
 			</section>
 
 			<section>
-				<h2 class="ui header">Pán-khuân</h2>
-				<h3 class="ui sub header">License</h3>
+				<h2 class="ui header">
+					Pán-khuân
+					<div class="sub header">License</div>
+				</h2>
 				<p>文字部份：聲音：CC</p>
 			</section>
 
 			<section>
-				<h2 class="ui header">Bîng-siā</h2>
-				<h3 class="ui sub header">Credits</h3>
+				<h2 class="ui header">
+					Bîng-siā
+					<div class="sub header">Credits</div>
+				</h2>
 				<p>本語料庫包括在列寶作：</p>
 				<ul>
 					<li>都市囡仔草地sông－蘇世雄</li>
