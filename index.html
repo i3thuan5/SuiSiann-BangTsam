@@ -16,20 +16,26 @@
 			margin-top: 4em;
 		}
 		p {
-			margin: 1.6em 0;
+			margin: 1.4rem 0;
 			font-size: 1.3em;
-			line-height: 1.7em;
+			line-height: 1.8;
 		}
 		#side {
-			margin-top: 3em;
+			margin-top: 6rem;
+		}
+		#side .ui.header {
+			font-size: .9rem;
 		}
 		#side .ui.header span {
-			line-height: 30px;
+			line-height: 2.25rem;
+			font-size: 1.2em;
+			font-weight: 300;
 			color: #666;
 		}
 		section {
 			margin-bottom: 6rem;
 		}
+		.abstract { margin-top: 2rem; margin-bottom: 3rem; }
 		.center {
 			text-align: center;
 		}
@@ -46,6 +52,27 @@
 		}
 		.description p:first-child {
 			margin-bottom: 0.3em;	
+		}
+		.thongke.table {
+			width: 50%;
+			padding: 1.5rem 2rem;
+			background-color: #f9f9f9;
+			border: 1px solid #ccc;
+			border-radius: .28571429rem;
+		}
+		.thongke.table tr td { 
+			padding-bottom: 1.2rem;
+		}
+		.thongke.table tr:last-child td { 
+			padding-bottom: 0;
+		}
+		@media only screen and (max-width: 980px) {
+			#side {
+				display: none;
+			}
+			.thongke.table {
+				width: 100%;
+			}
 		}
 	</style>
 </head>
@@ -65,7 +92,7 @@
 	    	</h5>
 	    	<h5 class="ui header">
 	    		TSHÙN-TSHIOH<div class="sub header">DOWNLOAD SIZE</div>
-	    		<span>1 GB</span>
+	    		<span>3.41 GB</span>
 	    	</h5>
 	    </div>
 	  	
@@ -75,17 +102,19 @@
 	    		<div class="sub header">Taioanoe speech dataset</div>
 	    	</h1>
 
-			<section class="ui container">
-			<h4 class="ui header">Tâi-bûn pán</h4>
-			<p>Tse sī tsi̍t pau siann-im ê gí-liāu-khòo. Tī 2018 nî iau-tshiánn Ông Siù-iông(王秀容) lāu-su lâi lo̍k-im. Lóng-tsóng ū 2,897 tè im-tóng, ta̍k-tè tn̂g-té ū OO kàu OO, liōng-kî-iok tsóng 7 tiám-tsing.</p>
+			<section>
+			<div class="abstract">
+			<h3 class="ui header">Tâi-bûn pán</h3>
+			<p>Tse sī tsi̍t pau siann-im ê gí-liāu-khòo. Tī 2018 nî iau-tshiánn Ông Siù-iông(王秀容) lāu-su lâi lo̍k-im. Lóng-tsóng ū 2,897 tè im-tóng, ta̍k tè tn̂g-té ū OO kàu OO, liōng-kî-iok tsóng 7 tiám-tsing.</p>
 
-			<p>Gí-kíng tsīn-liōng tsiâu-tsn̂g, tuì suànn-bûn kàu ji̍t-siông tuì-uē. Suànn-bûn sī 2015 nî tshut-pán--ê. Ta̍k kù lóng ū hàn-lô tuì-tsiàu.</p>
+			<p>Gí-kíng tsīn-liōng tsiâu-tsn̂g, tuì suànn-bûn kàu ji̍t-siông tuì-uē. Suànn-bûn sī 2015 nî tshut-pán--ê. Ta̍k kù lóng ū hàn-jī kah Lô-má-jī.</p>
 
 			<p>Im-tóng ê siū-khuân sī CC BY-SA. M̄-koh thiann-phah-kó kan-na ē-táng iōng tī gí-im ha̍p-sîng, ha̍k-su̍t--ê a̍h-sī sing-lí--ê lóng ē-īng-tit. Put-tsún siu-kái thiann-phah-kó ê hàn-jī. Nā-tsún lí m̄ sī beh iōng tī gí-im ha̍p-sîng, tshiánn liân-lo̍k tsok-tsiá.</p>
 
 			<p>Pún kè-uē ū tshíng-tio̍h Bûn-huà-pōo 2017 nî póo-tsōo.</p>
-			
-			<h4 class="ui header">English ver.</h4>
+			</div>
+			<div class="abstract">
+			<h3 class="ui header">English ver.</h3>
 			<p>This is a speech dataset consisting of 2,897 short audio clips of a single speaker Ms.Ông Siù-iông reading articles. A transcription is provided for each clip. Clips vary in length from "??? to ???" seconds and have a total length of approximately 7 hours.</p>
 			
 			<p>The dataset are designed with situation balance, from articles to conversation. The articles were published in 2015. Each sentence pair contains Chinese line and Lomaji line.</p>
@@ -93,7 +122,7 @@
 			<p>The audio is CC BY-SA license. The transcription is only allowed in speech synthesis project, academically or commercially, and the remix, rewrite of Chinese lines are not allowed. If there is any other usage purposes, please contact the author.</p>
 
 			<p>This project received financial aid by Taiwan Ministry of Culture in 2017.</p>
-
+		</div>
 			<div class="center">
 				<a class="ui primary icon button" href="https://www.dropbox.com/s/gxu3vzspeo2x1p6/SuiSiann-0.1.tar?dl=0" target="_blank" rel="noopener"><i class="download icon"></i>&nbsp;Sui Siann Dataset 0.0.1</a>
 			</div>
@@ -105,10 +134,10 @@
 					<div class="sub header">Sample Data</div>
 				</h2>
 				<div class="ui padded segment">
-					<audio src="./tuipiku_20181020.wav" type="audio/wav" controls>Oct 20, 2018  原始對比句.wav</audio>
+					<audio src="./tuipiku_20181020.wav" type="audio/wav" controls>Oct 20, 2018 原始對比句.wav</audio>
 					<div class="description">
-					<p>To-guân bûn-huà beh siū lâng khíng-tīng, gí-giân tī kong líng-hi̍k ê thîng-hiān sī tsin tiōng-iàu ê khai-sí.</p>
-					<p>多元文化欲受人肯定， 語言佇公領域的呈現是真重要的開始。</p>
+					<p>To-guân bûn-huà beh siū lâng khíng-tīng, gí-giân tī kong líng-hi̍k ê thîng-hiān sī tsin tiōng-iàu ê khai-sí.<br/>
+					多元文化欲受人肯定，語言佇公領域的呈現是真重要的開始。</p>
 					</div>
 				</div>
 			</section>
@@ -118,12 +147,28 @@
 					Tóng-àn Keh-sik
 					<div class="sub header">File Format</div>
 				</h2>
-				<p>Metadata is provided in ???.csv.</p>
-				<p>台大錄音室錄音機：Korg MR-1000 / 1bit-5.8MHz DSD portable recorder
-Mai-khu: The Shure SM10A Headworn Vocal Microphones
-The Shure SM10A is a low-impedance, unidirectional dynamic microphone designed for close-talk head-worn applications</p>
-				<p>Ta̍k ê im-tóng sī koo siann-tō.</p>
-				<p>Each audio file is a single-channel 16-bit PCM WAV with a sample rate of 44100 Hz.</p>
+				<p>Metadata is provided in ???.csv.
+				Metadata is provided in transcripts.csv. This file consists of one record per line, delimited by the pipe character (0x7c). The fields are:
+					<ol>
+						<li>ID: this is the name of the corresponding .wav file</li>
+					<li>Transcription: words spoken by the reader (UTF-8)</li>
+					<li>Normalized Transcription: transcription with numbers, ordinals, and monetary units expanded into full words (UTF-8).</li>
+				</p>
+				<p>台大錄音室<br/>
+					Sample Rate: 44100 Hz<br/>
+					Precision: 16-bit<br/>
+					Type: wav<br/>
+					Mái-khuh: Korg MR-1000 / 1bit-5.8MHz DSD portable recorder</p>
+				<p>瓦器錄音室<br/>
+					Sample Rate: 48000 Hz<br/>
+					Precision: 24-bit<br/>
+					Type: wav<br/>
+					Mái-khuh: Technica AT4050<br/>
+					ADDA: Antelope Zen Studio<br/>
+					Preamp: Antelope Zen Studio<br/>
+					Gain: 33<br/>
+					Dynamic Range: -2~-9db<br/>
+				</p>
 			</section>
 
 			<section>
@@ -131,21 +176,29 @@ The Shure SM10A is a low-impedance, unidirectional dynamic microphone designed f
 					Thóng-kè
 					<div class="sub header">Statistics</div>
 				</h2>
-				<table class="ui collapsing basic table">
-				  <tbody>
-				    <tr>
-				      <td data-label="Mia">Total Clips</td>
-				      <td data-label="Giah">??</td>
-				    </tr>
-				    <tr>
-				      <td data-label="Mia">Total Utterances</td>
-				      <td data-label="Giah">??</td>
-				    </tr>
-				    <tr>
-				      <td data-label="Mia">Total Duration</td>
-				      <td data-label="Giah">12 hr</td>
-				    </tr>
-				  </tbody>
+				<table class="thongke table">
+					<tbody>
+					<tr>
+						<td>
+							<h3 class="ui header">
+								Im-tòng Sòo
+								<div class="sub header">
+								Total Clips</div>
+							</h3>
+						</td>
+						<td>2897</td>
+					</tr>
+					<tr>
+						<td>
+							<h3 class="ui header">
+								Tsóng Sî-kan
+								<div class="sub header">
+								Total Duration</div>
+							</h3>
+						</td>
+						<td>7:00:53</td>
+					</tr>
+					</tbody>
 				</table>
 			</section>
 
@@ -154,7 +207,14 @@ The Shure SM10A is a low-impedance, unidirectional dynamic microphone designed f
 					Pán-khuân
 					<div class="sub header">License</div>
 				</h2>
-				<p>文字部份：聲音：CC</p>
+				<p>Im/Audio: CC BY-SA 4.0 license</p>
+				<p>Kó/Transcription:</p>
+				<ol>
+					<li>Ta̍k tsua ê hàn-jī bé-tàng kái</li>
+					<li>ta̍k tsua ê Lô-má-jī ē-kái-tit</li>
+					<li>kan-na ē-sái tsiânn-tsò gí-im ha̍p-sîng ê lōo-iōng</li>
+					<li>pit-su phín-bîng lâi-guân sī Suí-Siann gí-liāu-khòo</li>
+				</ol>
 			</section>
 
 			<section>
@@ -168,24 +228,24 @@ The Shure SM10A is a low-impedance, unidirectional dynamic microphone designed f
 					<li>故鄉的楊桃欉－簡繡芬</li>
 				</ul>
 				<p>感謝台大kah清大語言所的教授，謝豐帆、張月琴、謝舒凱、馮怡蓁、邱振豪，</p>
-				<p>感謝瓦器錄音室鬥錄音，共阮建議規个錄音流程。</p>
+				<p>感謝瓦器錄音室鬥錄音兼顧流程。</p>
 				<p>感謝濟濟先進鬥走揣作者，才有thang授權。</p>
 				<p>嘛敬謝文化部「語言多樣性友善環境補助」，是真大的幫贊。</p>
 			</section>
-
-			<section>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/GJvtWyuizyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<a href="https://www.muscene-studio.com/speech.html">Muscene Studio 瓦器錄音室:語音合成與錄音的關聯
-				</a>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wIrj7LU6JOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jAS9x1pGML8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Kog8Va2vXOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</section>
 			<div>
 	  	</div>
-		
 		</div>
 	</div>
+
+<section>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Kog8Va2vXOk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/GJvtWyuizyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wIrj7LU6JOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jAS9x1pGML8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<a href="https://www.muscene-studio.com/speech.html">Muscene Studio 瓦器錄音室:語音合成與錄音的關聯
+				</a>
+			</section>
 
 	<div class="ui divider"></div>	
 	<section class="center">
