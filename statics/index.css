@@ -42,6 +42,12 @@ section {
 .ui.big.list {
 	margin-left: 40px; 
 }
+.ui.no-marker.list {
+	margin-left: 20px; 	
+}
+.ui.no-marker.list li::before{
+	content: none;
+}
 .thongke.table {
 	width: 50%;
 	padding: 1.5rem 2rem;
